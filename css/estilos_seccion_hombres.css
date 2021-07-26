@@ -3,7 +3,11 @@
     padding: 10px;
     border-radius: 10px;
   }
-  
+  .texta{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
   .item-title {
     text-transform: uppercase;
     text-align: center;

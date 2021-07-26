@@ -9,6 +9,9 @@ and open the template in the editor.
         <title>Tarjetas de regalo</title>
         <meta charset="UTF-8">
         <meta name="Inicio" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
         <link rel="stylesheet" href="css/estilo_general.css">    
          <link rel="stylesheet" href="css/estiloscompra.css">
@@ -123,8 +126,32 @@ and open the template in the editor.
                         <input type="text" id="inputCCV" maxlength="3">
                     </div>
                 </div>
-                <button type="submit" class="btn-enviar">Enviar</button>
+              <!--   <button type="submit" class="btn-enviar">Enviar</button>-->
+                <button  class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                data-target="#comprarModal">Enviar</button>
+
+
+
             </form>
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Pronto recibirá su pedido</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-secundario" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 
 
@@ -167,6 +194,21 @@ and open the template in the editor.
                 <img id="logo" src="img/tarjetas_credito.png" alt="Logo">
             </div>
         </div>
+          <!-- SCRIPTS -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+          integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+          crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+          integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+          crossorigin="anonymous"></script>
+  
+        <script src="seccion_masculino.js">
+
+
+        </script>
     <script src="js\taylor.js"></script>
     </body>
 </html>
