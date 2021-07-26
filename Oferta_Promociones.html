@@ -1,82 +1,548 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>Promociones</title>
-        <meta charset="UTF-8">
-        <meta name="Inicio" content="width=device-width, initial-scale=1.0">
-        <meta name="ropa" content="empresa,online,ventas,comercio">
-        <link rel="stylesheet" href="css/estilo_general.css">
-    </head>
-    <body>
-        <header>
-            <div>
-                <img id="logo" src="img/Encabezado.jpg" alt="Logo">
-            </div>
-        </header>
-    
-    
-        <nav class="menu">
-            <ul>
-    
-                <li class="nav_li"> <a href="index.html">HOME</a> </li>
-                <li class="nav_li"> <a href="Seccion_Masculino.html">Seccion Hombres</a></li>
-                <li class="nav_li"> <a href="Seccion_Femenino.html">Seccion Mujeres</a> </li>
-                <li class="nav_li"> <a href="Oferta_Promociones.html">Ofertas y Promociones</a> </li>
-                <li class="nav_li"> <a href="Quienes_somos.html">Quienes Somos</a></li>
-                <li class="nav_li"> <a href="Tarjeta_Regalos.html">Tarjetas de Regalos</a> </li>
-                <li class="nav_li"> <a href="Inicio_Registro_Sesion.html">Inicio de Sesion</a> </li>
-                <li class="nav_li"> <a href="Condiciones.html">Condiciones y uso</a> </li>
-    
-    
-            </ul>
-        </nav>
-    
-    
-        <div class=futer-push>
-            <h2 id=sigueme> Siguenos</h2>
-            <ul class=redes-sociales>
-                <li class=twitter>
-                    <div class="icon-social"><img class=im-tuit src="img/Twitter.png" alt=""></div>
-                    <a href="#" target="_blank">Twitter</a>
-                </li>
-                <li class=twitter>
-                    <div class="icon-social"><img class=im-tuit src="img/facebook.png" alt=""></div>
-                    <a href="#" target="_blank">facebook</a>
-                </li>
-                <li class=twitter>
-                    <div class="icon-social"><img class=im-tuit src="img/Instagram.png" alt=""></div>
-                    <a href="#" target="_blank">Instagram</a>
-                </li>
-                <li class=twitter>
-                    <div class="icon-social"><img class=im-tuit src="img/correo.png" alt=""></div>
-                    <a href="#" target="_blank">Email</a>
-                </li>
-    
-            </ul>
-    
+<html lang="es">
+
+<head>
+    <title>Promociones</title>
+    <meta charset="UTF-8">
+    <meta name="ropa" content="hombre,mujer,accesorios,descuentos">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo_general.css">
+    <link rel="stylesheet" href="css/Oferta_Promociones/estilos_Diego.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- ESTILOS INTERNOS -->
+    <style>
+        .subtitulo {
+            background: #2b619f;
+            width: 100%;
+            color: white;
+            font-size: 40px;
+            font-style: italic;
+        }
+
+        .seccion_masculina div {
+            color: gray;
+        }
+
+        .seccion_femenina div {
+            color: aqua;
+        }
+
+        .seccion_accesorios div {
+            color: red;
+        }
+
+        #container1 h1 {
+            color: white;
+            background: gray;
+        }
+
+        #container2 h1 {
+            color: white;
+            background: aqua;
+        }
+
+        #container3 h1 {
+            color: white;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo_enc" src="img/Encabezado.jpg" alt="Logo">
         </div>
-    
-    
-    
-        <div class="footer">
-            <p>
-                Teléfonos: 0123456789 // 0987654321
-            </p>
-            <p>E-mail: info@ecuafashion.com.ec</p>
-            <p> Guayaquil - Ecuador</p>
-            <p>ecuafashion © 2021 | by Desarrollo ISIS-MA6-1 S.A Todos los derechos reservados.</p>
-            <p>
-    
-            </p>
-            <div>
-                <img id="logo" src="img/tarjetas_credito.png" alt="Logo">
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="menu">
+        <ul>
+
+            <li class="nav_li"> <a href="index.html">HOME</a> </li>
+            <li class="nav_li"> <a href="Seccion_Masculino.html">Seccion Hombres</a> </li>
+            <li class="nav_li"> <a href="Seccion_Femenino.html">Seccion Mujeres</a> </li>
+            <li class="nav_li"> <a href="Oferta_Promociones.html">Ofertas y Promociones</a> </li>
+            <li class="nav_li"> <a href="Quienes_somos.html">Quienes Somos</a></li>
+            <li class="nav_li"> <a href="Tarjeta_Regalos.html">Tarjetas de Regalos</a> </li>
+            <li class="nav_li"> <a href="Inicio_Registro_Sesion.html">Inicio de Sesion</a> </li>
+            <li class="nav_li"> <a href="Condiciones.html">Condiciones y uso</a> </li>
+
+
+        </ul>
+    </nav>
+
+
+    <div>
+        &nbsp;
+        <br>
+        <!-- ESTILO EN LÍNEA -->
+        <h4 class="subtitulo" style="text-align:center;"><span>Ofertas y Promociones</span></h4>
+    </div>
+    <br>
+    <!-- 1ERA SECCIÓN DE PRODUCTOS -->
+    &nbsp;
+    <div>
+        <img style="width: 100%; height: 180px" src="img/Oferta_Promociones/banner_seccion_masculina.jpg"
+            alt="banner" />
+    </div>
+    &nbsp;
+
+    <header>
+        <div id="container1">
+            <h1 class="text-center">OFERTAS Y PROMOCIONES</h1>
+            <hr>
+        </div>
+    </header>
+
+    <section class="seccion_masculina">
+        <div class="container">
+            <div class="items">
+                <div class="row">
+
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">Conjunto Masculino 1</h3>
+                            <img class="imagen-producto" src="img/Oferta_Promociones/ropa_masculina1.jpg"
+                                alt="Conjunto_Hombre">
+
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$48.50</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">Conjunto Masculino 2</h3>
+
+                            <img class="imagen-producto" src="img/Oferta_Promociones/ropa_masculina2.jpg"
+                                alt="Conjunto_Hombre">
+
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$59.00</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">Conjunto Masculino 3</h3>
+
+                            <img class="imagen-producto" src="img/Oferta_Promociones/ropa_masculina3.jpg"
+                                alt="Conjunto_Hombre">
+
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$32.30</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">Conjunto de 4 Prendas + Cadena</h3>
+
+                            <img class="imagen-producto" src="img/Oferta_Promociones/ropa_masculina4.jpg"
+                                alt="Conjunto_Hombre">
+
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$42.34</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">2 Juegos de Pijama Pineapple</h3>
+
+                            <img class="imagen-producto" src="img/Oferta_Promociones/ropa_masculina5.jpg"
+                                alt="Conjunto_Hombre">
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$29.34</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">2 Juegos de Pijama con texto</h3>
+
+                            <img class="imagen-producto" src="img/Oferta_Promociones/ropa_masculina6.jpg"
+                                alt="Conjunto_Hombre">
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$22.76</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    
-    </body>
+    </section>
+    <!-- 2DA SECCIÓN DE PRODUCTOS -->
+    <br>
+    <br>
+    &nbsp;
+    <div>
+        <img style="width: 100%; height: 180px" src="img/Oferta_Promociones/banner_seccion_femenina.jpg" alt="banner" />
+    </div>
+    &nbsp;
+
+    <header>
+        <div id="container2">
+            <h1 class="text-center">OFERTAS Y PROMOCIONES</h1>
+            <hr>
+        </div>
+    </header>
+
+    <section class="seccion_femenina">
+        <div class="container">
+            <div class="items">
+                <div class="row">
+
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">Conjunto Femenino 1</h3>
+                            <img class="imagen-producto" src="img/Oferta_Promociones/ropa_femenina1.jpg"
+                                alt="Conjunto_Mujer">
+
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$70.04</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">Conjunto Femenino 2</h3>
+
+                            <img class="imagen-producto" src="img/Oferta_Promociones/ropa_femenina2.jpg"
+                                alt="Conjunto_Mujer">
+
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$62.34</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">Conjunto Femenino 3</h3>
+
+                            <img class="imagen-producto" src="img/Oferta_Promociones/ropa_femenina3.jpg"
+                                alt="Conjunto_Mujer">
+
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$74.67</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">Conjunto de 4 prendas + 3 Accesorios</h3>
+
+                            <img class="imagen-producto" src="img/Oferta_Promociones/ropa_femenina4.jpg"
+                                alt="Conjunto_Mujer">
+
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$99.99</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">Conjunto de cama + 2 accesorios</h3>
+
+                            <img class="imagen-producto" src="img/Oferta_Promociones/ropa_femenina5.jpg"
+                                alt="Conjunto_Mujer">
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$66.45</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">2 Conjuntos deportivos</h3>
+
+                            <img class="imagen-producto" src="img/Oferta_Promociones/ropa_femenina6.jpg"
+                                alt="Conjunto_Mujer">
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$140.19</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 3ERA SECCIÓN DE PRODUCTOS -->
+    <br>
+    <br>
+    &nbsp;
+    <div>
+        <img style="width: 100%; height: 180px" src="img/Oferta_Promociones/banner_seccion_accesorios.jpg"
+            alt="banner" />
+    </div>
+    &nbsp;
+
+    <header>
+        <div id="container3">
+            <h1 class="text-center">OFERTAS Y PROMOCIONES</h1>
+            <hr>
+        </div>
+    </header>
+
+    <section class="seccion_accesorios">
+        <div class="container">
+            <div class="items">
+                <div class="row">
+
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">Correas de Cintura</h3>
+                            <img class="imagen-producto" src="img/Oferta_Promociones/accesorios1.jpg" alt="accesorio">
+
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$16.67</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">Mochila color Negro</h3>
+
+                            <img class="imagen-producto" src="img/Oferta_Promociones/accesorios2.jpg" alt="accesorio">
+
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$65.34</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">Lentes protección UV</h3>
+
+                            <img class="imagen-producto" src="img/Oferta_Promociones/accesorios3.jpg" alt="accesorio">
+
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$39.45</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">Zapatos Biancucci y Reloj Trabiroski</h3>
+
+                            <img class="imagen-producto" src="img/Oferta_Promociones/accesorios4.jpg" alt="accesorio">
+
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$92.89</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">Reloj Brefling y Mochila</h3>
+
+                            <img class="imagen-producto" src="img/Oferta_Promociones/accesorios5.jpg" alt="accesorio">
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$78.34</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="nombre-producto">Par de Lentes GQ para Lectura</h3>
+
+                            <img class="imagen-producto" src="img/Oferta_Promociones/accesorios6.jpg" alt="accesorio">
+                            <div class="detalles-producto">
+                                <h4 class="precio-producto">$34.30</h4>
+                                <button class="item-button btn btn-primary agregar-carrito-compras">AÑADIR AL
+                                    CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- IMPLEMENTACIÓN DEL CARRITO DE COMPRAS -->
+    <section class="carrito-compras">
+        <div class="container">
+            <h2 class="text-center">CARRITO</h2>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="carrito-compras-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="carrito-compras-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="carrito-compras-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carrito-compras-items shoppingCartItemsContainer">
+
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="carrito-compras-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal"><a href="compra.html" class="texta">Comprar</a></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn-secundario" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/Oferta_Promociones/carrito.js"></script>
+    <div><img style="width: 100%; height: 180px" src="img/Oferta_Promociones/banner_inferior.jpg" alt="banner" /></div>
+    <!-- FOOTER -->
+
+
+    <!-- REDES SOCIALES -->
+    <div class=futer-push>
+        <h2 id=sigueme> Siguenos</h2>
+        <ul class=redes-sociales>
+            <li class=twitter>
+                <div class="icon-social"><img class=im-tuit src="img/Twitter.png" alt=""></div>
+                <a href="#" target="_blank">Twitter</a>
+            </li>
+            <li class=twitter>
+                <div class="icon-social"><img class=im-tuit src="img/facebook.png" alt=""></div>
+                <a href="#" target="_blank">facebook</a>
+            </li>
+            <li class=twitter>
+                <div class="icon-social"><img class=im-tuit src="img/Instagram.png" alt=""></div>
+                <a href="#" target="_blank">Instagram</a>
+            </li>
+            <li class=twitter>
+                <div class="icon-social"><img class=im-tuit src="img/correo.png" alt=""></div>
+                <a href="#" target="_blank">Email</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="footer">
+        <p>
+            Teléfonos: 0123456789 // 0987654321
+        </p>
+        <p>E-mail: info@ecuafashion.com.ec</p>
+        <p> Guayaquil - Ecuador</p>
+        <p>ecuafashion © 2021 | by Desarrollo ISIS-MA6-1 S.A Todos los derechos reservados.</p>
+        <p>
+
+        </p>
+        <div>
+            <img class="logo" src="img/tarjetas_credito.png" alt="Logo">
+        </div>
+    </div>
+
+</body>
+
 </html>
