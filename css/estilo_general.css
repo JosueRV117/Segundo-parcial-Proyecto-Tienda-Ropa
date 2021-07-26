@@ -155,7 +155,23 @@ display: flex;
 
 
 /************************************************/
+#pack3_img{
 
+    text-align:center
+    
+}
+
+ .imagenes_texto {
+    
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 24%;
+    border: 5px solid rgb(255, 255, 255);
+    
+
+}
 
 
 /*-----------------------------------footer------------------------------------*/
@@ -358,21 +374,5 @@ height: 100%;
 
  }
 
+
  
-#pack3_img{
-
-    text-align:center
-    
-}
-
- .imagenes_texto {
-    
-    border-radius: 10px;
-    margin: 20px;
-    text-align: center;
-    display: inline-block;
-    width: 24%;
-    border: 5px solid rgb(255, 255, 255);
-    
-
-}
